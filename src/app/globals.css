@@ -1,26 +1,90 @@
 @import "tailwindcss";
+@import "@fortawesome/fontawesome-free/css/all.css";
+@plugin "daisyui" {
+    themes: light ---default;
+}
+@plugin "daisyui/theme" {
+    name: "light";
+    color-scheme: light;
+    default: true;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --color-primary: #374151;
+    --color-primary-content: #f1f5f9;
+
+    --color-secondary: #4e7c13;
+    --color-secondary-content: #f1f5f9;
+
+    --color-accent: #3358d3;
+    --color-accent-content: #f1f5f9;
+
+    --color-info: #06b6d4;
+    --color-info-content: #242f39;
+
+    --color-warning: #ffc107;
+    --color-warning-content: #242f39;
+
+    --color-success: #33d37b;
+    --color-success-content: #242f39;
+
+    --color-error: #ef4444;
+    --color-error-content: #f1f5f9;
+
+    --color-neutral: #374151;
+    --color-neutral-content: #cbd1de;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@plugin "daisyui/theme" {
+    name: "dark";
+    color-scheme: dark;
+
+    --color-primary: #374151;
+    --color-primary-content: #f1f5f9;
+
+    --color-secondary: #4e7c13;
+    --color-secondary-content: #cbd1de;
+
+    --color-accent: #3358d3;
+    --color-accent-content: #f1f5f9;
+
+    --color-info: #06b6d4;
+    --color-info-content: #242f39;
+
+    --color-success: #33d37b;
+    --color-success-content: #f1f5f9;
+
+    --color-warning: #ffc107;
+    --color-warning-content: #242f39;
+
+    --color-error: #ef4444;
+    --color-error-content: #f1f5f9;
+
+    --color-neutral: #374151;
+    --color-neutral-content: #cbd1de;
+}
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+/* Scrollbar para contenedores con overflow-y */
+.scrollbar-custom {
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: transparent #2dd4bf; /* thumb transparente, track gris   #1f2937; */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Chrome, Edge, Safari */
+.scrollbar-custom::-webkit-scrollbar {
+    width: 8px;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.scrollbar-custom::-webkit-scrollbar-track {
+    background: #1f2937; /* color del track */
 }
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+    background-color: transparent; /* thumb transparente */
+    border-radius: 4px;
+    border: 2px solid transparent; /* opcional, mantiene espacio sin color */
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
