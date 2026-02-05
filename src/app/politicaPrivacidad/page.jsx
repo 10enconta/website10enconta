@@ -77,7 +77,7 @@ const Sectiontwo = () => {
                         <strong>País:</strong> Guatemala
                     </li>
                     <li>
-                        <strong>Correo electrónico:</strong>{" "}
+                        <strong>Correo electrónico:</strong>
                         <a
                             href="mailto:privacidad@10enconta.com"
                             className="text-emerald-600 underline">
