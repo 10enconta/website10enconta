@@ -1,6 +1,6 @@
 export default function Home() {
     return (
-        <main className="flex flex-col md:flex-row items-center justify-center w-full space-x-5  p-4 ">
+        <main className="flex flex-col md:flex-row items-center justify-center w-full space-x-5  p-4 select-none">
             {/* LEFT */}
             <section className="w-full md:w-1/2  p-4 rounded-xl bg-base-200">
                 <span className="typing-badge px-4 font-semibold text-base">
@@ -11,8 +11,11 @@ export default function Home() {
                     Contabilidad simple para negocios que no quieren perder
                     dinero
                 </h1>
-
-                <p className="mb-8 text-lg text-slate-700 dark:text-slate-400">
+                <h2 className="text-xl font-bold leading-tight">
+                    Lleva tus cuentas de forma simple, para negocios que no
+                    quieren perder dinero
+                </h2>
+                <p className="mb-8 text-lg text-slate-800 dark:text-slate-400 mt-3">
                     Ayudamos a emprendedores a entender sus números, evitar
                     errores y tomar decisiones financieras con claridad.
                     <br />
@@ -22,11 +25,23 @@ export default function Home() {
                     </span>
                 </p>
 
-                <ul className="mb-10 space-y-3 text-slate-700 dark:text-slate-300">
+                <ul className="mb-10 space-y-3 text-slate-800 dark:text-slate-300">
                     <li>✔ Entiende tus números sin ser contador</li>
-                    <li>✔ Emails prácticos y accionables</li>
                     <li>✔ Recursos reales usados con clientes</li>
                     <li>✔ Detecta fugas de dinero hoy mismo</li>
+                    <li>
+                        ✔ Un material extra para aplicar de inmediato en tu
+                        negocio.
+                    </li>
+                    <li>
+                        ✔ Estrategia práctica enviada directamente a tu correo.
+                    </li>
+                    <li>
+                        ✔ Audio de 14 minutos con los fundamentos esenciales
+                        para convertir mejor, aplicables a negocios reales y
+                        actuales.
+                    </li>
+                    <li>✔ Acceso a contenidos y productos exclusivos.</li>
                 </ul>
 
                 <p className="mb-6 text-sm text-slate-600 dark:text-slate-400">
@@ -40,7 +55,7 @@ export default function Home() {
                         type="email"
                         required
                         placeholder="Correo electrónico *"
-                        className="input input-neutral"
+                        className="input input-neutral w-full"
                     />
 
                     <div className="flex items-start gap-2 text-xs text-slate-600 dark:text-slate-400">
