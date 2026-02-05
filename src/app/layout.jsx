@@ -17,6 +17,15 @@ const geistMono = Geist_Mono({
 export const metadata = {
     title: "10enconta",
     description: "Contabilidad Guatemala",
+
+    icons: {
+        icon: "/favicon.ico",
+        shortcut: "/favicon-16x16.png",
+        apple: "/apple-touch-icon.png",
+    },
+
+    manifest: "/site.webmanifest",
+    themeColor: "#ffffff",
 }
 
 export default function RootLayout({ children }) {
