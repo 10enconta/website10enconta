@@ -45,9 +45,24 @@ export default function Home() {
                 </p>
 
                 {/* FORM */}
-                <form className="space-y-4">
+                <form
+                    className="space-y-4"
+                    onSubmit={async (e) => {
+                        e.preventDefault()
+
+                        const email = e.target.email.value
+
+                        await fetch("/api/contact", {
+                            method: "POST",
+                            headers: {
+                                "Content-Type": "application/json",
+                            },
+                            body: JSON.stringify({ email }),
+                        })
+                    }}>
                     <input
                         type="email"
+                        name="email"
                         required
                         placeholder="Correo electrónico *"
                         className="input input-neutral w-full"
