@@ -8,13 +8,9 @@ export default function Home() {
                 </span>
 
                 <h1 className="mt-6 mb-6 text-4xl font-bold leading-tight">
-                    Contabilidad simple para negocios que no quieren perder
-                    dinero
+                    LLeva tus cuentas de forma simple, para negocios que no
+                    quieren perder dinero.
                 </h1>
-                <h2 className="text-xl font-bold leading-tight">
-                    Lleva tus cuentas de forma simple, para negocios que no
-                    quieren perder dinero
-                </h2>
                 <p className="mb-8 text-lg text-slate-800 dark:text-slate-400 mt-3">
                     Ayudamos a emprendedores a entender sus números, evitar
                     errores y tomar decisiones financieras con claridad.
@@ -28,7 +24,7 @@ export default function Home() {
                 <ul className="mb-10 space-y-3 text-slate-800 dark:text-slate-300">
                     <li>✔ Entiende tus números sin ser contador</li>
                     <li>✔ Recursos reales usados con clientes</li>
-                    <li>✔ Detecta fugas de dinero hoy mismo</li>
+                    <li>✔ Detecta errores hoy mismo</li>
                     <li>
                         ✔ Un material extra para aplicar de inmediato en tu
                         negocio.
@@ -37,15 +33,14 @@ export default function Home() {
                         ✔ Estrategia práctica enviada directamente a tu correo.
                     </li>
                     <li>
-                        ✔ Audio de 14 minutos con los fundamentos esenciales
-                        para convertir mejor, aplicables a negocios reales y
-                        actuales.
+                        ✔ Audio con los fundamentos esenciales para analizar tus
+                        numeros, aplicable a cualquier negocio.
                     </li>
                     <li>✔ Acceso a contenidos y productos exclusivos.</li>
                 </ul>
 
                 <p className="mb-6 text-sm text-slate-600 dark:text-slate-400">
-                    Miles de personas ya están fabricando sus proyectos en
+                    Cientos de personas ya están fabricando sus proyectos en
                     línea.
                 </p>
 
@@ -85,11 +80,6 @@ export default function Home() {
             <section className="group perspective  w-full md:w-auto flex items-center justify-center ">
                 <div className="hover-3d">
                     <figure className="w-full md:w-[370px] md:h-[225px] h-auto mx-auto rounded-xl bg-black p-6 text-center shadow-2xl select-none flex flex-col justify-center border border-white/10">
-                        <i className="fa-solid fa-microchip text-yellow-400 text-3xl bm-4 "></i>
-
-                        <p className=" text-white tracking-wide text-xl">
-                            AMERICAN EXPRESS
-                        </p>
                         <h1 className="font-bold text-4xl text-white">
                             <strong className="text-yellow-400">1O</strong>
                             enConta
