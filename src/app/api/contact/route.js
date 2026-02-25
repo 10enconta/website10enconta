@@ -14,8 +14,8 @@ export async function POST(req) {
         }
 
         await resend.emails.send({
-            from: "Landing <onboarding@resend.dev>",
-            to: "10enconta@gmail.com",
+            from: "Landing <contacto@10enconta.com>",
+            to: "romeoteni093@gmail.com",
             subject: "Nuevo registro 10enconta oficial",
             html: `
                 <h2>Nuevo cliente interesado</h2>
