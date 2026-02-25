@@ -1,3 +1,5 @@
+"use client"
+
 export default function Home() {
     return (
         <main className="flex flex-col md:flex-row items-center justify-center w-full space-x-5  p-4 select-none">
