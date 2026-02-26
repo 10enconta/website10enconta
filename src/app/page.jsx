@@ -59,7 +59,7 @@ bg-[size:40px_40px]
 ">
             {/* TOAST */}
             {toast && (
-                <div className="toast toast-center toast-middle">
+                <div className="toast toast-center toast-end">
                     <div
                         className={`alert ${
                             toast.type === "success"

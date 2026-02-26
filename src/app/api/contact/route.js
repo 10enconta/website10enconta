@@ -18,7 +18,7 @@ export async function POST(req) {
         //  CORREO PARA TI (NOTIFICACIÓN)
         await resend.emails.send({
             from: "10enConta <contacto@data.10enconta.com>",
-            to: "romeoteni093@gmail.com",
+            to: "10enconta@gmail.com",
             subject: "Nuevo registro - 10enConta",
             html: `
 <div style="margin:0;padding:0;background-color:#f1f5f9;
